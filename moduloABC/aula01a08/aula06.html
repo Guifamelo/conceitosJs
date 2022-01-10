@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <section>
+        <h1>Olá Mundo!! Me livrei da maldição!!</h1>
+
+    </section>
+    <section>
+        <h1>Olá Mundo!! Me livrei da maldição!!</h1>
+    </section>
+    <div>
+
+    </div>
+    <footer>
+
+    </footer>
+    <!--EX1
+    <script>
+        window.prompt("Olá mundo!! JÁ ME LIVREI DA MALDIÇÃO!!")
+        var n1 = window.prompt('Digita valor 1 inteiro');
+        var n2 = window.prompt('Digita valor 2 flutuante');
+        n1 = Number.parseInt(n1);
+        n2 = Number.parseFloat(n2);
+        var s = n1 + n2;
+        window.alert(`A some de ${n1} + ${n2} é ${s}`);
+    </script>
+    EX1/-->
+    <!--EX ALCOOLICO 
+    <script>
+        window.alert(`ola mundo!`);
+        var nome = window.prompt('qual o seu nome?');
+        var idade = Number.parseInt(window.prompt('bonito nome. Posso saber sua idade?'));
+        if (idade < 18) {
+            window.alert(`Lamento ${nome}, mas nao posso te vender alcool nem cigarro.`)
+        }else {
+            window.alert(`qual bebida o senhor gostaria?`)
+            var bebida = window.prompt('digita a bebida')
+            if (bebida == 'whisky') {
+                window.alert('Opa, toma! Da 70 reais.')
+            }else if (bebida == 'vodka') {
+                window.alert('Ta na mao! Deu 50 reais.')
+            }else if(bebida != 'whisky' || bebida != 'vodka'){
+                window.alert(`Lamento ${nome}, mas a gente ta ${bebida} no momento.`)
+            }
+        }
+
+
+    </script>
+    EX ALCOOLICO-->
+    <!--EX04 e criativo aula ate 08
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        //window.alert('seu nome tem ' + nome.length + ' letras')
+        document.write(`Bonito nome <strong>${nome}</strong>! E ele tem ${nome.length} letras.`)
+        document.write(`<br>Seu nome em maiusculas e: ${nome.toUpperCase()}`) //writeln ja pula linha, e nao precisa do <br> ou nao... haha
+        document.write(`<br>E em minusculas e: ${nome.toLowerCase()}`)
+        var sal = Number.parseFloat(window.prompt('Qual seu salario em reais?'))
+        var bene = Number.parseFloat(window.prompt('E quanto de benefifio flash?'))
+        bene.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        sal+=bene
+        reais = sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        
+        dolar = (sal/5.7).toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+        euro = (sal/6.45).toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        document.write(`<br>Seu salario e: ${reais}, o que seria equivalente a ${dolar} ou ${euro}` )
+        
+        document.write(`<br>Se somar ao beneficio flash, fica praticamente ${reais+=bene}`) //errado 
+
+    </script>
+    EX04 e criativo ate aula 08-->
+
+
+</body>
+
+</html>
