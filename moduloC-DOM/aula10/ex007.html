@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3 Somando Numeros</title>
+    <style>
+        body {
+            font: normal 14pt Arial;
+        }
+
+        input {
+            font: normal 10pt Arial;
+            width: 100px;
+            height: 20px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá mundo! Me livrei da maldição!</h1>
+    <h1>Somando os valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()" id="botao">
+    <div id="res">Resultado</div>
+
+
+    <script>
+        var bt = window.document.getElementById('botao')
+        bt.addEventListener('mouseenter', entrar)
+        bt.addEventListener('mouseout', sair)
+        function entrar(){
+            bt.style.background = 'red'
+        }
+        function sair(){
+            bt.style.background = 'white'
+        }
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = `A soma entre ${n1} + ${n2} eh igual a <strong>${s}</strong>`
+            /*  if (s < 6) {
+                  res.style.background = 'brown'
+                  res.style.color = 'white'
+              } else{ } */
+        }
+
+    </script>
+
+</body>
+
+</html>

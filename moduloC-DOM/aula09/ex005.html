@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM1</title>
+    <style>
+        body {
+            background-color: rgb(87, 130, 194);
+            color: azure;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <section name="sessao">
+        <h1>Olá Mundo!! Me livrei da maldição!!</h1>
+        <p>Eh muito bom estar livre da maldicao!</p>
+        <p>aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+        <div id="msg">Clique em mim</div>
+    </section>
+    <div class="div">
+        <h1>Ola mundo!</h1>
+    </div>
+    <div id="div2">
+        <h2>
+            ola de novo!
+        </h2>
+    </div>
+    <div class="div3">
+        <h3>
+            Livre da maldição!
+        </h3>
+
+    </div>
+    <footer id="footer">
+        <h2>Roda pe do mundao</h2>
+    </footer>
+    <script>
+        //window.document.write(window.document.getElementsByTagName('p')[0])
+        window.document.write('<br>' + window.document.characterSet)
+        window.document.write('<br>' + window.navigator.appName)
+        window.document.write('<br>' + window.document.URL)
+       // window.document.in('<br>'window.document.getElementsByTagName('p')[0])
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+       var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`<br>Esta escrito assim: ${p1.innerText}`)        
+        window.document.write(`<br>Esta escrito assim: ${p1.innerHTML}`)
+        p1.style.color = 'green'
+        var p2 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`<br>P[1] esta assim: ${p2.innerText}`)
+        var msg = window.document.getElementById('msg')
+        window.document.write(`<br>A mensagem na dev e: ${msg.innerText}`)
+        msg.style.background = 'aqua'
+       // msg.innerText = 'Estou aguardando...'
+       var sessao = window.document.getElementsByName('sessao')[0]
+       sessao.style.background = 'brown'
+       var div = window.document.getElementsByClassName('div')[0]
+       div.style.background = 'blue'
+       var foot = window.document.querySelector('footer#footer')
+       foot.style.background = 'red'
+       var div2 = window.document.querySelector('div#div2')
+       div2.style.color = 'yellow'
+       var div3 = window.document.querySelector('div.div3')
+       div3.style.background = 'yellow'
+       div3.style.color = 'black' 
+
+
+
+
+    </script>
+
+</body>
+
+</html>
