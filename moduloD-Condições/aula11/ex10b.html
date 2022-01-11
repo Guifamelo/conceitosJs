@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo ou Br</title>
+</head>
+
+<body>
+    <h1>Nice to meet you!</h1>
+    <h3>Tell me what country do you came from</h3>
+    <input type="text" value="type here" id="pais">
+    <input type="button" value="Check" id="check" onclick="checkar()">
+    <div id="res">Press check to see</div>
+    <div id="msg"></div>
+    <div id="img"></div>
+    
+
+    <script>
+
+        function checkar() {
+            var txt = window.document.getElementById('pais').value
+           // res.innerHTML += `${txt}`
+           if(txt == 'Brasil'){
+              // window.document.write(' Ola Mundo! Cada vz mais livre da maldicao!!')
+            msg.innerHTML = ' Ola Mundo! Cada vz mais livre da maldicao!!'
+            }else if(txt == 'Mexico' || txt == 'Guatemala'){
+                msg.innerHTML = `Heloo muchacho!!`
+                img.innerHTML = `<img src="https://cdn-icons-png.flaticon.com/512/1357/1357590.png" alt="chapeu mexicano">`
+             //   document.write(`Hola que tal`)
+            }else if(txt == 'Argentina'){
+                msg.innerHTML = `Hola que tal boludo`
+            }else if(txt == 'Colombia'){
+                msg.innerHTML = `Habla Cabron!`
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
